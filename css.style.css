@@ -1,0 +1,181 @@
+body {
+    background-color: cornsilk;
+    font-family: 'Space Mono';
+    margin: 0;
+    font-size: 20px;
+    overflow-y:auto;
+}
+
+hr {
+    width: 50%;
+    margin-top: 20px;
+}
+
+#banner {
+    background-image: url(./img\ folder/vanillaCupcakes.png);
+    background-size: cover;
+    background-position: bottom center;
+    height: 400px;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 10px;
+}
+
+#banner h1 {
+    position: relative;
+    top: 140px;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 40px;
+    animation-duration: 3s;
+    animation-name: slidein;
+    color: black;
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+@keyframes slidein {
+    from {
+        margin-left: 200%;
+        width: 300%;
+      }
+      75% {
+        font-size: 300%;
+        margin-left: 0%;
+        width: 100%;
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+    }
+
+#logo {
+    height: 400px;
+    display: block;
+    margin: auto;
+    overflow-y:auto;
+    overflow-x:auto;
+}
+
+#order-request {
+    position: relative;
+    padding: 5px;
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25px;
+    background-color: white;
+    border-radius: 10000px;
+
+}
+
+form {
+    display: grid;
+    grid-row: auto;
+    text-align: center;
+    padding: 1rem;
+    line-height: 50px;
+}
+
+form span {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+form .name {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+form section #customer-name {
+    height: 25px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+form #dozen {
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    margin-top: 1rem;
+}
+
+form section #customFlavor {
+    height: 25px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+form textarea {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+form footer .submitting {
+    font-size: 20px;
+    width: 90px;
+    height: 50px;
+    padding: 11px 3px;
+    border: 15px;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+    background-color: lightslategray;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 350ms;
+}
+footer input:hover {
+    background-color: limegreen;
+}
+
+ 
+body #submission {
+    animation-duration: 3s;
+    animation-name: ease-in;
+    padding: 1rem;
+    margin: 0 auto;
+    font-size: 40px;
+    text-align: center;
+    overflow-x: auto;
+}
+
+@keyframes ease-in {
+    from {
+        margin-bottom: 300%;
+        width: 400%;
+    }
+
+    to {
+        margin-bottom: 0%;
+        width: 100%;
+    }
+}
+
+body span img {
+    position: center;
+    padding: 20px;
+    margin-left: 45%;
+    background-color: none;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+    transition-delay: 350ms;
+}
+
+span img:hover {
+    background-color: none;
+    width: 150px;
+    
+    
+}
+
+#submission {
+    font-size: 18px;
+}
+
+

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="css.style.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+        </style> 
+            <title> Customize your Cupcakes</title>
+    </head>
+    <body>
+        <section id="overlay">
+            <div id="banner">
+            <h1>Angelica's Cupcakes</h1>
+            </div>
+
+        <form action="submission.html" method="post" required>
+            <h1 id="order-request">Order Request Form</h1>
+        <hr>
+                <section class="name">
+                        <label for="customer-name">Please Insert Name for the Order Here:</label>
+                <br>
+                        <input type="text" name="customer-name" id="customer-name" minlength="3" maxlength="50" required>
+                </section>
+        <hr>
+        
+                <section class="dozen-count">
+                        <span for="dozen">1. How many Cupcakes would you like in your box?</span>
+                <br>
+                <select name="dozen" id="dozen">
+                        <option value="half-dozen">Half Dozen</option>
+                        <option value="one-dozen" >One Dozen</option>
+                        <option value="two-dozen">Two Dozen</option>
+                        <option value="three-dozen">Three Dozen</option>
+                </select>
+                </section>
+                <hr>
+                <section class="flavor">
+                    <span for="batter">2. What flavor Cake would you like?</span>
+                    <br>
+                    <input type="radio" name="flavor" id="Vanilla" value="Vanilla" required>
+                            <label for="Vanilla">Vanilla</label>
+                    <input type="radio" name="flavor" id="Chocolate" value="Choclate" required>
+                            <label for="Chocolate">Chocolate</label>
+                    <input type="radio" name="flavor" id="redVelvet" value="redVelvet" required>
+                            <label for="redVelvet">Red Velvet</label>
+                    <input type="radio" name="flavor" id="rubyRum" value="rubyRum" required>
+                            <label for="rubyRum">Ruby Rum</label>
+                    <input type="radio" name="flavor" id="Custom" value="Custom" required>
+                            <label for="Custom">Custom</label>
+                    <br>
+                    
+                </section>
+                <section>
+                            <span for="customFlavor">What Customizable Flavor would you like?</span>
+                    <input type="text" name="customFlavor" id="customFlavor" list="customs" minlength="3" maxlength="50">
+                        <datalist id="customs">
+                            <option value="Butter cream"></option>
+                            <option value="Carrot Cake"></option>
+                            <option value="Lemon"></option>
+                            <option value="Rum Cake"></option>  
+                        </datalist>
+                </section>
+                    <hr>
+                <section class="toppings-question">
+                <span>3. Would you like toppings?</span>
+                    <br>
+                    <input type="radio" name="tops" id="yes" value="yes" required>
+                            <label for="yes">Yes</label>
+                    <input type="radio" name="tops" id="no" value="no" required>
+                            <label for="no">No</label>
+                </section>
+                <section class="toppings-type">
+                <span>If yes, What toppings would you like?</span>
+                    <br>
+                    <input type="radio" name="topping" id="sprinkles" value="sprinkles">
+                            <label for="sprinkles">Sprinkles</label>
+                    <input type="radio" name="topping" id="cinnamon" value="cinnamon">
+                            <label for="cinnamon">Cinnamon</label>
+                    <input type="radio" name="topping" id="peacans" value="peacans">
+                            <label for="peacans">Peacans</label>
+                    <input type="radio" name="topping" id="coconut" value="coconut">
+                            <label for="coconut">Coconut</label>
+                    <input type="radio" name="topping" id="chocolateChips" value="chocolateChips">
+                            <label for="chocolateChips">Chocolate Chips</label>
+                
+                </section>
+                    <hr>
+                <section class="icing-type">
+                <span> 4. What type of icing would you like? (More than 1 can be chosen)</span>
+                    <br>
+                    <input type="checkbox" name="icing" id="vanilla-icing" value="vanilla-icing">
+                            <label for="vanilla-icing">Vanilla Icing</label>
+                    <input type="checkbox" name="icing" id="fudge-icing" value="fudge-icing">
+                            <label for="fudge-icing">Fudge Icing</label>
+                    <input type="checkbox" name="icing" id="coconut-icing" value="coconut-icing">
+                            <label for="coconut-icing">Coconut Icing</label>
+                    <input type="checkbox" name="icing" id="butter-cream" value="butter-cream">
+                            <label for="butter-cream">Butter Cream Icing</label>
+                </section>
+                <hr>
+                <section class="allergic" action="submission.html" method="POST" required>
+                <span> 5. Do you have any food allergies that we need to know about?</span>
+                    <br>
+                    <input type="radio" name="allergy" id="yes" value="yes" required>
+                            <label for="yes">Yes</label>
+                    <input type="radio" name="allergy" id="no" value="no" required>
+                            <label for="no">No, I have no food allergies.</label>
+                    <br>
+                <span>If yes, please inform us what items you are allergic too.</span>
+                    <br>
+                            <textarea id="allergies" name="allergies" rows="3" cols="30" type="text" minlength="3" maxlength="100"></textarea>   
+                </section>
+                    <hr>
+                <section class="extra-info">
+                         <span for="extra"> 6. Anything else you would like on your cupcakes? (Optional)</span>
+                    <br>
+                            <textarea id="extra" name="extra" rows="3" cols="40" type="text" minlength="3" maxlength="100"></textarea>
+                    <hr>
+                </section> 
+                <footer>
+                <input class="submitting" type="submit" value="Submit">
+                </footer>
+            </form>
+         </section>
+    </body>
+</html>
